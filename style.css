@@ -21,7 +21,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 70px;
     background-color: white;
     color: black;
     display: flex;
@@ -316,6 +316,9 @@ html {
     }
     .chat-header div h3{
         font-size: 16px;
+    }
+    .container {
+        height: 100%;
     }
     .chat-header div:first-child {
         font-size: 14px;
