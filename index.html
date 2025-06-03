@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c0eaf719ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            <div>
+                Chat App
+            </div>
+        </div>
+        <div class="profile">M</div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left" id="leftMenu">
+            <div class="chat-list">
+                <div class="chat-person steve">
+                    <div>SR</div>
+                    <div>Steve Rogers</div>
+                </div>
+                <div class="chat-person">
+                    <div>TO</div>
+                    <div>Thor Odinson</div>
+                </div>
+                <div class="chat-person">
+                    <div>BB</div>
+                    <div>Bruce Banner</div>
+                </div>
+                <div class="chat-person">
+                    <div>TS</div>
+                    <div>Tony Stark</div>
+                </div>
+                <div class="chat-person">
+                    <div>PP</div>
+                    <div>Peter Parker</div>
+                </div>
+                <div class="chat-person">
+                    <div>SW</div>
+                    <div>Sam Wilson</div>
+                </div>
+                <div class="chat-person strange">
+                    <div>DS</div>
+                    <div>Dr Strange</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Chat Area -->
+        <main class="chat-area">
+            <div class="chat-header">
+                <div>SR</div>
+                <div>
+                    <h3>Steve Rogers</h3>
+                    <div class="online-status">Online</div>
+                </div>
+                <div class="typing" id="typingIndicator">Steve is typing...</div>
+            </div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <textarea id="userInput" placeholder="Type a message..."></textarea>
+                <button onclick="sendMessage()">Send<i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right">
+            <div class="profile-info">
+                <div class="profile-header">
+                    <div class="profile-pic">SR</div>
+                    <h3>Steve Rogers</h3>
+                    <div>Online</div>
+                </div>
+                <div class="profile-role">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    Avengers Leader
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">© 2025 Chat App | Made with ❤️ by Mahtab</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
